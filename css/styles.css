@@ -258,3 +258,26 @@ body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',
         padding: 14px 0;
     }
 }
+
+/* ===== FIX MOBILE HEADER ALIGNMENT ===== */
+@media (max-width: 700px) {
+
+  /* Keep logo left, hamburger right */
+  .header-inner {
+      display: flex;
+      justify-content: space-between !important;
+      align-items: center;
+      flex-direction: row !important;
+      padding: 14px 0;
+  }
+
+  /* Ensure hamburger stays right */
+  .mobile-menu-btn {
+      margin-left: auto;
+  }
+
+  /* Remove any centering applied earlier */
+  .logo {
+      margin: 0;
+  }
+}
