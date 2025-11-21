@@ -57,3 +57,148 @@ body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',
   .contact-grid{grid-template-columns:1fr}
   .hero-copy h1{font-size:30px}
 }
+
+/* ======================================= */
+/* FULL MOBILE + TABLET RESPONSIVE UPGRADE */
+/* ======================================= */
+
+/* Tablet adjustments (under 900px) */
+@media (max-width: 900px) {
+
+  .wrap {
+    padding: 0 18px;
+  }
+
+  .hero {
+    padding: 60px 0;
+  }
+
+  .hero-copy h1 {
+    font-size: 32px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+  }
+}
+
+/* PHONE LAYOUT — FULL OPTIMIZATION (under 600px) */
+@media (max-width: 600px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  .wrap {
+    padding: 0 14px;
+  }
+
+  /* HERO SECTION */
+  .hero {
+    padding: 50px 0 40px;
+    text-align: center;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+
+  .hero-copy h1 {
+    font-size: 26px;
+    line-height: 1.25;
+  }
+
+  .lead {
+    font-size: 16px;
+  }
+
+  .hero-cta .btn {
+    width: 100%;
+  }
+
+  /* HOW IT WORKS */
+  .steps-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px;
+  }
+
+  .step {
+    padding: 18px;
+  }
+
+  /* SERVICES */
+  .services-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .service-card {
+    padding: 18px;
+  }
+
+  /* TWO COLUMN SECTIONS */
+  .two-col,
+  .contact-grid,
+  .about-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* CARDS */
+  .card {
+    padding: 20px;
+  }
+
+  /* CONTACT BOX */
+  .contact-box {
+    padding: 16px;
+  }
+
+  /* IMAGES */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* NAVIGATION */
+  .header-inner {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .main-nav a {
+    margin: 0 10px;
+    display: inline-block;
+  }
+
+  /* TESTIMONIALS */
+  .test-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* FINAL CTA */
+  .final-cta {
+    padding: 40px 0;
+  }
+
+  /* BUTTONS FULL WIDTH */
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* FOOTER */
+  .footer-inner {
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+  }
+}
