@@ -58,6 +58,34 @@ body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',
   .hero-copy h1{font-size:30px}
 }
 
+/* ===== CLEAN MOBILE NAV - OPTION A ===== */
+@media (max-width: 600px) {
+
+  /* Stack logo + nav vertically */
+  .header-inner {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 0;
+  }
+
+  /* Make nav links appear in a clean row */
+  .main-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 14px; /* even spacing */
+      margin-top: 8px;
+  }
+
+  /* Text sizing + tap-friendly padding */
+  .main-nav a {
+      font-size: 15px;
+      padding: 6px 10px;
+  }
+
+}
+
 /* ======================================= */
 /* FULL MOBILE + TABLET RESPONSIVE UPGRADE */
 /* ======================================= */
