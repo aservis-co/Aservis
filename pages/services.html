@@ -8,85 +8,70 @@
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
- <header class="site-header">
+<header class="site-header">
   <div class="wrap header-inner">
-
-    <a class="logo" href="/">Aservis</a>
-
-    <!-- Mobile Hamburger Button -->
+    <a class="logo" href="../index.html">Aservis</a>
     <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
-
-  <!-- Desktop Navigation -->
-<nav class="main-nav">
-  <a href="../pages/services.html">Services</a>
-  <a href="../pages/about.html">About</a>
-  <a href="../pages/contact.html">Contact</a>
-  <a class="btn btn-outline" href="../pages/contractor.html">Contractor Sign-Up</a>
-</nav>
-
+    <nav class="main-nav">
+      <a href="../pages/services.html">Services</a>
+      <a href="../pages/about.html">About</a>
+      <a href="../pages/contact.html">Contact</a>
+      <a class="btn btn-outline" href="../pages/contractor.html">Contractor Sign-Up</a>
+    </nav>
   </div>
-
-<!-- Mobile Navigation -->
-<nav class="mobile-nav">
-  <a href="../pages/services.html">Services</a>
-  <a href="../pages/about.html">About</a>
-  <a href="../pages/contact.html">Contact</a>
-  <a class="btn btn-outline" href="../pages/contractor.html">Contractor Sign-Up</a>
-</nav>
+  <nav class="mobile-nav">
+    <a href="../pages/services.html">Services</a>
+    <a href="../pages/about.html">About</a>
+    <a href="../pages/contact.html">Contact</a>
+    <a class="btn btn-outline" href="../pages/contractor.html">Contractor Sign-Up</a>
+  </nav>
 </header>
-
-  <main>
-    <section class="page-hero">
-      <div class="wrap">
-        <h1>Services</h1>
-        <p class="muted">Comprehensive contractor services tailored to your needs.</p>
-      </div>
-    </section>
-
-    <section class="service-block">
-      <div class="wrap two-col">
-        <div>
-          <h2>Plumbing</h2>
-          <p class="muted">Emergency repairs, installations and full plumbing projects. We match licensed plumbers to your job and area.</p>
-          <a class="btn btn-outline" href="contact.html#request">Request Plumbing</a>
-        </div>
-        <div class="img-placeholder"><img src="../assets/plumbing.svg" alt="plumbing"></div>
-      </div>
-    </section>
-
-    <section class="service-block alt">
-      <div class="wrap two-col">
-        <div>
-          <h2>Tiling</h2>
-          <p class="muted">Precision tiling for bathrooms, kitchens and floors — matched with experienced tilers.</p>
-          <a class="btn btn-outline" href="contact.html#request">Request Tiling</a>
-        </div>
-        <div class="img-placeholder"><img src="../assets/tiling.svg" alt="tiling"></div>
-      </div>
-    </section>
-
-    <section class="service-block">
-      <div class="wrap two-col">
-        <div>
-          <h2>Painting</h2>
-          <p class="muted">Interior and exterior painting services with full prep and finish.</p>
-          <a class="btn btn-outline" href="contact.html#request">Request Painting</a>
-        </div>
-        <div class="img-placeholder"><img src="../assets/painting.svg" alt="painting"></div>
-      </div>
-    </section>
-
-    <div class="wrap center"><a class="btn btn-primary" href="contact.html#request">Request Any Service</a></div>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap footer-inner">
-      <div>© 2025 Aservis</div>
-      <div class="footer-links"><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></div>
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <h1>Services</h1>
+      <p class="muted">Comprehensive contractor services tailored to your needs.</p>
     </div>
-  </footer>
-  <script>
+  </section>
+  <section class="service-block">
+    <div class="wrap two-col">
+      <div>
+        <h2>Plumbing</h2>
+        <p class="muted">Emergency repairs, installations and full plumbing projects.</p>
+        <a class="btn btn-outline" href="contact.html#request">Request Plumbing</a>
+      </div>
+      <div class="img-placeholder"><img src="../assets/plumbing.svg" alt="plumbing"></div>
+    </div>
+  </section>
+  <section class="service-block alt">
+    <div class="wrap two-col">
+      <div>
+        <h2>Tiling</h2>
+        <p class="muted">Precision tiling for bathrooms, kitchens and floors.</p>
+        <a class="btn btn-outline" href="contact.html#request">Request Tiling</a>
+      </div>
+      <div class="img-placeholder"><img src="../assets/tiling.svg" alt="tiling"></div>
+    </div>
+  </section>
+  <section class="service-block">
+    <div class="wrap two-col">
+      <div>
+        <h2>Painting</h2>
+        <p class="muted">Interior and exterior painting services with full prep and finish.</p>
+        <a class="btn btn-outline" href="contact.html#request">Request Painting</a>
+      </div>
+      <div class="img-placeholder"><img src="../assets/painting.svg" alt="painting"></div>
+    </div>
+  </section>
+  <div class="wrap center"><a class="btn btn-primary" href="contact.html#request">Request Any Service</a></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>© 2025 Aservis</div>
+    <div class="footer-links"><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></div>
+  </div>
+</footer>
+<script>
 function toggleMenu() {
     document.querySelector('.mobile-nav').classList.toggle('open');
 }
