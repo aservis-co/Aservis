@@ -1,59 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Terms & Conditions | Your Contractor Network</title>
-
-    <!-- SEO -->
-    <meta name="description" content="Terms and conditions outlining the rules, responsibilities, and legal guidelines for using our contractor service platform." />
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="../assets/style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aservis — Terms & Conditions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container header-inner">
-            <a href="../index.html" class="logo">Aservis</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="/">Aservis</a>
+    <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
 
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contractor.html">Become a Contractor</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+    <nav class="main-nav">
+      <a href="/pages/services.html">Services</a>
+      <a href="/pages/about.html">About</a>
+      <a href="/pages/contact.html">Contact</a>
+      <a class="btn btn-outline" href="/pages/contractor.html">Contractor Sign-Up</a>
+    </nav>
+  </div>
 
-            <div class="mobile-menu" id="mobileMenuBtn">☰</div>
-        </div>
-    </header>
+  <nav class="mobile-nav">
+    <a href="/pages/services.html">Services</a>
+    <a href="/pages/about.html">About</a>
+    <a href="/pages/contact.html">Contact</a>
+    <a class="btn btn-outline" href="/pages/contractor.html">Contractor Sign-Up</a>
+  </nav>
+</header>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-nav" id="mobileNav">
-        <a href="../index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="contractor.html">Become a Contractor</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html" class="active">Terms & Conditions</a>
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <h1>Terms & Conditions</h1>
+      <p class="muted">Please read these terms carefully before using our platform.</p>
     </div>
+  </section>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1>Terms & Conditions</h1>
-            <p>Please read these terms carefully before using our platform.</p>
-        </div>
-    </section>
-
-    <!-- Content Section -->
-    <section class="legal-content container">
-        <h2>1. Introduction</h2>
+  <section class="wrap">
+    <div class="card">
+      <h2>1. Introduction</h2>
         <p>
             These Terms and Conditions govern your use of our website and contractor services platform.
             By accessing or using our services, you agree to comply with these terms in full.
@@ -99,42 +86,27 @@
         <p>
             For questions regarding these terms, you may contact us through the contact page:
             <a href="contact.html">Contact Page</a>.
-        </p>
-    </section>
+        <p>
+            
+      <!-- keep your remaining sections unchanged -->
+    </div>
+  </section>
+</main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container footer-inner">
-            <div class="footer-col">
-                <h3>Aservis</h3>
-                <p>Your trusted network for contractors and home services.</p>
-            </div>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>© 2025 Aservis</div>
+    <div class="footer-links">
+      <a href="/pages/privacy.html">Privacy</a> · 
+      <a href="/pages/terms.html">Terms</a>
+    </div>
+  </div>
+</footer>
 
-            <div class="footer-col">
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contractor.html">Become a Contractor</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4>Legal</h4>
-                <ul>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                    <li><a href="terms.html" class="active">Terms & Conditions</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>© 2025 Aservis. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="../assets/script.js"></script>
+<script>
+function toggleMenu() {
+    document.querySelector('.mobile-nav').classList.toggle('open');
+}
+</script>
 </body>
 </html>
