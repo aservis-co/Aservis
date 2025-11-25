@@ -292,3 +292,12 @@ body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',
       padding-left: 2px;
   }
 }
+
+/* Make embedded Google Form appear on a clean white card */
+.form-embed iframe {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
