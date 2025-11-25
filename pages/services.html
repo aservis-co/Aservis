@@ -7,74 +7,103 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
+
 <header class="site-header">
   <div class="wrap header-inner">
+
+    <!-- FIXED: Logo now correctly points back to root home page -->
     <a class="logo" href="../index.html">Aservis</a>
+
+    <!-- Mobile Hamburger Button -->
     <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
+
+    <!-- Desktop Navigation -->
     <nav class="main-nav">
-      <a href="../pages/services.html">Services</a>
-      <a href="../pages/about.html">About</a>
-      <a href="../pages/contact.html">Contact</a>
-      <a class="btn btn-outline" href="../pages/contractor.html">Contractor Sign-Up</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn-outline" href="contractor.html">Contractor Sign-Up</a>
     </nav>
+
   </div>
+
+  <!-- Mobile Navigation -->
   <nav class="mobile-nav">
-    <a href="../pages/services.html">Services</a>
-    <a href="../pages/about.html">About</a>
-    <a href="../pages/contact.html">Contact</a>
-    <a class="btn btn-outline" href="../pages/contractor.html">Contractor Sign-Up</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a class="btn btn-outline" href="contractor.html">Contractor Sign-Up</a>
   </nav>
 </header>
+
 <main>
+
   <section class="page-hero">
     <div class="wrap">
-      <h1>Services</h1>
-      <p class="muted">Comprehensive contractor services tailored to your needs.</p>
+      <h1>Our Services</h1>
+      <p class="muted">Professional, reliable and vetted contractors for every job.</p>
     </div>
   </section>
-  <section class="service-block">
-    <div class="wrap two-col">
-      <div>
-        <h2>Plumbing</h2>
-        <p class="muted">Emergency repairs, installations and full plumbing projects.</p>
-        <a class="btn btn-outline" href="contact.html#request">Request Plumbing</a>
-      </div>
-      <div class="img-placeholder"><img src="../assets/plumbing.svg" alt="plumbing"></div>
+
+  <section class="wrap service-list">
+    
+    <div class="card">
+      <h3>Plumbing</h3>
+      <p class="muted">
+        Leak repairs, pipe work, geyser installations, bathroom fittings and more.
+      </p>
     </div>
-  </section>
-  <section class="service-block alt">
-    <div class="wrap two-col">
-      <div>
-        <h2>Tiling</h2>
-        <p class="muted">Precision tiling for bathrooms, kitchens and floors.</p>
-        <a class="btn btn-outline" href="contact.html#request">Request Tiling</a>
-      </div>
-      <div class="img-placeholder"><img src="../assets/tiling.svg" alt="tiling"></div>
+
+    <div class="card">
+      <h3>Electrical</h3>
+      <p class="muted">
+        Fault finding, rewiring, lighting installation and compliance certificates.
+      </p>
     </div>
-  </section>
-  <section class="service-block">
-    <div class="wrap two-col">
-      <div>
-        <h2>Painting</h2>
-        <p class="muted">Interior and exterior painting services with full prep and finish.</p>
-        <a class="btn btn-outline" href="contact.html#request">Request Painting</a>
-      </div>
-      <div class="img-placeholder"><img src="../assets/painting.svg" alt="painting"></div>
+
+    <div class="card">
+      <h3>Painting</h3>
+      <p class="muted">
+        Interior & exterior painting, wall prep, waterproofing and refinishing.
+      </p>
     </div>
+
+    <div class="card">
+      <h3>Tiling</h3>
+      <p class="muted">
+        Professional floor and wall tiling, adhesive work and tile replacement.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Handyman</h3>
+      <p class="muted">
+        General repairs, fixtures, maintenance and home improvement services.
+      </p>
+    </div>
+
   </section>
-  <div class="wrap center"><a class="btn btn-primary" href="contact.html#request">Request Any Service</a></div>
+
 </main>
+
 <footer class="site-footer">
   <div class="wrap footer-inner">
     <div>© 2025 Aservis</div>
-    <div class="footer-links"><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></div>
+
+    <!-- FIXED: Correct paths for pages folder -->
+    <div class="footer-links">
+      <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a>
+    </div>
   </div>
 </footer>
+
 <script>
-function toggleMenu() {
-    document.querySelector('.mobile-nav').classList.toggle('open');
-}
+  function toggleMenu() {
+      document.querySelector('.mobile-nav').classList.toggle('open');
+  }
 </script>
+
 </body>
 </html>
