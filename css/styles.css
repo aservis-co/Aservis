@@ -393,3 +393,20 @@ body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',
     opacity: 0.85;
     transform: translateY(-2px);
 }
+
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  .service-list .card {
+      position: relative;
+      padding-right: 200px; /* space for the button */
+      min-height: 120px;
+  }
+
+  .service-btn {
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+}
