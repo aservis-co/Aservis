@@ -97,11 +97,30 @@
         <p class="muted"><strong>Service Areas:</strong> Your local region</p>
 
         <div style="margin-top: 18px;">
-         <a class="btn btn-primary"
-   href="https://mail.google.com/mail/?view=cm&fs=1&to=aservis.co@gmail.com"
-   target="_blank" rel="noopener">
+         <a class="btn btn-primary" href="#" onclick="openEmail(event)">
   Email Us
 </a>
+
+<script>
+function openEmail(e) {
+  e.preventDefault();
+
+  const email = "aservis.co@gmail.com";
+
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  if (isMobile) {
+    // Opens email app (best mobile experience)
+    window.location.href = "mailto:" + email;
+  } else {
+    // Opens Gmail on desktop
+    window.open(
+      "https://mail.google.com/mail/?view=cm&fs=1&to=" + email,
+      "_blank"
+    );
+  }
+}
+</script>
         </div>
       </div>
     </aside>
