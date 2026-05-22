@@ -483,3 +483,25 @@ body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',
     gap: 18px;
   }
 }
+
+/* ===== CONTACT PAGE DESKTOP LAYOUT FIX ===== */
+@media (min-width: 768px) {
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 32px;
+    align-items: start;
+  }
+
+  /* Ensure correct visual ordering */
+  .contact-left {
+    order: 1;
+  }
+
+  .contact-right {
+    order: 2;
+    position: sticky;
+    top: 100px; /* optional: keeps box visible while scrolling */
+  }
+}
