@@ -411,10 +411,15 @@ body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',
   }
 }
 
-/* ===== CONTACT FORM PREVIEW FIX ===== */
+/* ===== CONTACT FORM SECTION ===== */
+
+.contact-left h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
 
 .form-embed {
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
 .form-preview-card {
@@ -426,29 +431,40 @@ body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',
 }
 
 .form-preview-top {
-  height: 10px;
+  height: 8px;
   background: var(--primary);
 }
 
 .form-preview-content {
-  padding: 34px;
+  padding: 36px;
 }
 
 .form-preview-content h3 {
-  margin-top: 0;
-  margin-bottom: 14px;
-  font-size: 24px;
+  margin: 0 0 14px;
+  font-size: 26px;
   line-height: 1.3;
 }
 
 .form-preview-content p {
   margin: 0;
-  color: var(--slate);
+  color: var(--muted);
   font-size: 17px;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
-/* Mobile optimization */
+.google-form-note {
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 14px;
+}
+
+/* Improve sidebar spacing */
+.contact-right {
+  align-self: start;
+}
+
+/* Mobile improvements */
 @media (max-width: 600px) {
 
   .form-preview-content {
@@ -456,10 +472,14 @@ body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',
   }
 
   .form-preview-content h3 {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .form-preview-content p {
     font-size: 16px;
+  }
+
+  .contact-grid {
+    gap: 18px;
   }
 }
